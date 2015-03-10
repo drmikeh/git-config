@@ -1,0 +1,33 @@
+[user]
+# email = <your email goes here>
+# name = <your name goes here>
+
+[color]
+ ui = auto
+
+[alias]
+  st = status
+  di = diff
+  diffs = diff --staged
+  co = checkout
+  ci = commit
+  br = branch
+  g  = log --graph --all --branches --decorate --pretty=format:'[%C(auto)%h%Creset][%C(cyan)%an %ar%Creset]%C(auto)%d%Creset %s %C(auto)%Creset'
+  g2 = log --graph --all --full-history --branches --decorate --abbrev-commit --pretty=oneline
+  g3 = log --graph --all --full-history --branches --decorate --abbrev-commit
+  g4 = log --graph --all --pretty=format:'%h %s'
+  gb = log --graph --all --simplify-by-decoration --pretty=format:'%C(auto)%d%Creset'
+  h = log --all --decorate
+  log2 = log --pretty=fuller
+  ls = log --stat --all --decorate
+
+[push]
+  default = simple
+
+[core]
+  editor = subl -n -w
+  autocrlf = input
+  safecrlf = false
+
+[credential]
+  helper = osxkeychain
